@@ -31,6 +31,7 @@ docker run \
     --ipc host \
     -e HTTP_PROXY= \
     -e HTTPS_PROXY= \
+    -v ~/.local/share/wemeetapp:/home/user/.local/share/wemeetapp \
     "naturalselect/wemeetpod:3.19.0"
 ```
 
