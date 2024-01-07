@@ -1,17 +1,5 @@
-# WemeetPod
+#!/bin/bash
 
-Wemeet in docker.
-
-
-## Build
-
-```bash
-make up
-```
-
-## Usage
-
-```bash
 docker run \
     --rm \
     -it \
@@ -31,11 +19,5 @@ docker run \
     --ipc host \
     -e HTTP_PROXY= \
     -e HTTPS_PROXY= \
+    $@ \
     "naturalselect/wemeetpod:3.19.0"
-```
-
-or
-
-```bash
-make run
-```
