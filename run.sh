@@ -12,9 +12,9 @@ docker run \
     -e VIDEO_GID="$(getent group video | cut -d: -f3)" \
     -e XDG_RUNTIME_DIR \
     -v ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR} \
-    -v /dev/dri:/dev/dri \
-    -v /dev/video0 \
+    --device /dev/video0 \
     -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
+    --hostname "$(hostname)"
     --userns keep-id\
     --ipc host \
     -e HTTP_PROXY= \
