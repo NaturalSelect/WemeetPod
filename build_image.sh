@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker build . -t naturalselect/wemeetpod:3.19.0
+source prepare.sh
+
+docker build . -t naturalselect/wemeetpod:${TAG}

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-TAG="3.19.0"
+source version.sh
 
 docker push naturalselect/wemeetpod:${TAG}
