@@ -21,4 +21,4 @@ docker run \
     -e HTTPS_PROXY= \
     -v ~/.local/share/wemeetapp:/home/user/.local/share/wemeetapp \
     $@ \
-    "naturalselect/wemeetpod:3.19.0"
+    "naturalselect/wemeetpod:3.19.2"
