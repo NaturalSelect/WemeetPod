@@ -14,6 +14,7 @@ docker run \
     -v ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR} \
     --device /dev/video0 \
     -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
+    -v /etc/localtime:/etc/localtime:ro \
     --hostname "$(hostname)"
     --userns keep-id\
     --ipc host \
